@@ -1,0 +1,36 @@
+{
+  "name": "now-docs",
+  "version": "0.0.0",
+  "description": "Deploy docs with a single command",
+  "main": "index.js",
+  "repository": "bukinoshita/now-docs.git",
+  "author": "Bu Kinoshita <bukinoshita@gmail.com>",
+  "license": "MIT",
+  "files": ["index.js", "lib", "docs"],
+  "bin": {
+    "now-docs": "index.js"
+  },
+  "keywords": ["docs", "documentation", "now", "zeit", "deply"],
+  "scripts": {
+    "test": "xo"
+  },
+  "dependencies": {
+    "del": "^3.0.0",
+    "execa": "^0.8.0",
+    "fs-extra": "^4.0.2",
+    "is-extname": "^0.0.1",
+    "listr": "^0.13.0",
+    "meow": "^4.0.0",
+    "read-package": "^0.0.1",
+    "showdown": "^1.8.2",
+    "update-notifier": "^2.3.0",
+    "write-pkg": "^3.1.0"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^2.9.0",
+    "xo": "^0.18.2"
+  },
+  "xo": {
+    "extend": ["prettier"]
+  }
+}
