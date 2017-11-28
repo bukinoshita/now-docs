@@ -1,16 +1,26 @@
 {
   "name": "now-docs",
-  "version": "0.0.0",
+  "version": "0.0.1-0",
   "description": "Deploy docs with a single command",
   "main": "index.js",
   "repository": "bukinoshita/now-docs.git",
   "author": "Bu Kinoshita <bukinoshita@gmail.com>",
   "license": "MIT",
-  "files": ["index.js", "lib", "docs"],
+  "files": [
+    "index.js",
+    "lib",
+    "docs"
+  ],
   "bin": {
     "now-docs": "index.js"
   },
-  "keywords": ["docs", "documentation", "now", "zeit", "deply"],
+  "keywords": [
+    "docs",
+    "documentation",
+    "now",
+    "zeit",
+    "deply"
+  ],
   "scripts": {
     "test": "xo"
   },
@@ -31,6 +41,8 @@
     "xo": "^0.18.2"
   },
   "xo": {
-    "extend": ["prettier"]
+    "extend": [
+      "prettier"
+    ]
   }
 }
