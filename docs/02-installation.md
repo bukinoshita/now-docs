@@ -1,4 +1,4 @@
-## installation
+## Installation
 
 Install the `now-docs` with npm:
 
