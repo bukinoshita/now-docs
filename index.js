@@ -5,6 +5,7 @@ const Listr = require('listr')
 const meow = require('meow')
 const updateNotifier = require('update-notifier')
 
+const checkFolders = require('./lib/check-folders')
 const createFolders = require('./lib/create-folders')
 const createFiles = require('./lib/create-files')
 const install = require('./lib/install')
@@ -31,6 +32,10 @@ updateNotifier({ pkg: cli.pkg }).notify()
 
 const tasks = new Listr([
   {
+    title: 'Check `docs` folder existence',
+    task: () => checkFolders()
+  },
+  {
     title: 'Create `.now-docs` folders',
     task: () => createFolders()
   },
@@ -51,4 +56,4 @@ const tasks = new Listr([
 tasks
   .run()
   .then(() => console.log(`\ncreated!`))
-  .catch(err => console.log(err.stderr.replace('fatal: ', '')))
+  .catch(err => console.log(err.message))
