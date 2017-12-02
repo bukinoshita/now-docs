@@ -7,7 +7,6 @@ const updateNotifier = require('update-notifier')
 
 const createFolders = require('./lib/create-folders')
 const createFiles = require('./lib/create-files')
-const install = require('./lib/install')
 const deploy = require('./lib/deploy')
 
 const cli = meow(
@@ -37,10 +36,6 @@ const tasks = new Listr([
   {
     title: 'Create `.now-docs` files',
     task: () => createFiles()
-  },
-  {
-    title: 'Install dependencies',
-    task: () => install()
   },
   {
     title: 'Deploy docs',
