@@ -6,21 +6,11 @@
   "repository": "bukinoshita/now-docs.git",
   "author": "Bu Kinoshita <bukinoshita@gmail.com>",
   "license": "MIT",
-  "files": [
-    "index.js",
-    "lib",
-    "docs"
-  ],
+  "files": ["index.js", "lib", "docs"],
   "bin": {
     "now-docs": "index.js"
   },
-  "keywords": [
-    "docs",
-    "documentation",
-    "now",
-    "zeit",
-    "deply"
-  ],
+  "keywords": ["docs", "documentation", "now", "zeit", "deploy"],
   "scripts": {
     "test": "xo"
   },
@@ -41,8 +31,6 @@
     "xo": "^0.18.2"
   },
   "xo": {
-    "extend": [
-      "prettier"
-    ]
+    "extend": ["prettier"]
   }
 }
