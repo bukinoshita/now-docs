@@ -10,7 +10,7 @@
   "bin": {
     "now-docs": "bin/now-docs.js"
   },
-  "keywords": ["docs", "documentation", "now", "zeit", "deploy"],
+  "keywords": ["docs", "documentation", "now", "zeit", "deploy", "nextjs"],
   "scripts": {
     "test": "xo"
   },
