@@ -3,7 +3,7 @@
   "version": "0.0.1-0",
   "description": "Deploy docs with a single command",
   "main": "bin/now-docs.js",
-  "repository": "bukinoshita/now-docs.git",
+  "repository": "bukinoshita/now-docs",
   "author": "Bu Kinoshita <bukinoshita@gmail.com>",
   "license": "MIT",
   "files": ["lib", "bin"],
