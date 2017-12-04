@@ -2,13 +2,13 @@
   "name": "now-docs",
   "version": "0.0.1-0",
   "description": "Deploy docs with a single command",
-  "main": "index.js",
+  "main": "bin/now-docs.js",
   "repository": "bukinoshita/now-docs.git",
   "author": "Bu Kinoshita <bukinoshita@gmail.com>",
   "license": "MIT",
-  "files": ["index.js", "lib", "docs"],
+  "files": ["lib", "bin"],
   "bin": {
-    "now-docs": "index.js"
+    "now-docs": "bin/now-docs.js"
   },
   "keywords": ["docs", "documentation", "now", "zeit", "deploy"],
   "scripts": {
@@ -19,9 +19,12 @@
     "execa": "^0.8.0",
     "fs-extra": "^4.0.2",
     "is-extname": "^0.0.1",
-    "listr": "^0.13.0",
+    "load-json-file": "^4.0.0",
     "meow": "^4.0.0",
+    "ora": "^1.3.0",
     "read-package": "^0.0.1",
+    "shout-error": "^0.0.2",
+    "shout-success": "^0.0.2",
     "showdown": "^1.8.2",
     "update-notifier": "^2.3.0",
     "write-pkg": "^3.1.0"
@@ -31,6 +34,19 @@
     "xo": "^0.18.2"
   },
   "xo": {
-    "extend": ["prettier"]
+    "extend": ["prettier"],
+    "rules": {
+      "unicorn/catch-error-name": 0
+    },
+    "ignores": [
+      "lib/components/*.js",
+      "lib/layouts/*.js",
+      "lib/pages/*.js",
+      "lib/styles/*.js"
+    ]
+  },
+  "nowDocs": {
+    "name": "now-docs",
+    "alias": "now-docs.now.sh"
   }
 }

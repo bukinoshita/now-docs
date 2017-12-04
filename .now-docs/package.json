@@ -1,0 +1,19 @@
+{
+	"name": "now-docs",
+	"version": "0.0.0",
+	"description": "Deploy docs with a single command",
+	"scripts": {
+		"dev": "next",
+		"start": "next start",
+		"build": "next build"
+	},
+	"dependencies": {
+		"next": "^4.2.0-canary.1",
+		"react": "^16.2.0",
+		"react-dom": "^16.2.0"
+	},
+	"now": {
+		"name": "now-docs",
+		"alias": "now-docs.now.sh"
+	}
+}
