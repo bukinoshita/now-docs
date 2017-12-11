@@ -1,0 +1,269 @@
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  font-weight: 300;
+  background: #fff;
+  color: #212529;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 75px;
+  margin-bottom: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  color: #212529;
+}
+
+code {
+  margin-left: 5px;
+  margin-right: 2px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-wrapper {
+  display: flex;
+}
+
+.content {
+  width: 75%;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+.title {
+  margin: 5px 0;
+  line-height: 2.2em;
+}
+
+.title.center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 500px;
+}
+
+.title > span {
+  display: block;
+}
+
+.text {
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.subtext {
+  color: #212529;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.sidebar {
+  flex: 1 1 auto;
+}
+
+.menu {
+  position: sticky;
+  top: 50px;
+  color: #212529;
+}
+
+.menu-item {
+  list-style: none;
+  padding-bottom: 15px;
+}
+
+.menu__link {
+  position: relative;
+  user-select: none;
+  font-weight: 400;
+  transition: color 200ms;
+  color: #868e96;
+  text-decoration: none;
+}
+
+.menu__link:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -5px;
+  left: 0;
+  background-color: #212529;
+  visibility: hidden;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: all 250ms cubic-bezier(0.82, 0, 0.12, 1);
+}
+
+.menu__link:hover {
+  color: #212529;
+}
+
+.menu__link:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.page {
+  margin-top: 100px;
+  padding-top: 50px;
+}
+
+.page:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.page h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.page h2 a {
+  position: relative;
+  margin-left: -14px;
+  opacity: 0.15;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-bottom: none;
+}
+
+.page h2 a:hover {
+  opacity: 1;
+}
+
+.page h2 svg {
+  position: absolute;
+  right: 8px;
+  top: 3px;
+}
+
+.page h2 + p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+.page p {
+  margin: 25px 0;
+  line-height: 1.6;
+  color: #212529;
+}
+
+.page a {
+  color: #212529;
+  font-weight: 400;
+  padding-bottom: 3px;
+  border-bottom: 1px dotted #ddd;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.page p > code {
+  border: 1px solid #dee2e6;
+  font-size: 0.75rem;
+  padding: 3px 10px;
+  border-radius: 3px;
+  white-space: nowrap;
+  font-weight: 600;
+  font-family: inherit;
+}
+
+.page pre {
+  background: #fafafa;
+  color: #000;
+  padding: 30px;
+  border-radius: 2px;
+  overflow-x: auto;
+  font-family: 'Source Code Pro', Menlo, monospace;
+  font-size: 0.8em;
+  line-height: 1.5em;
+}
+
+.page ul {
+  margin: 50px 0 50px 30px;
+  padding: 0;
+}
+
+.page li {
+  margin: 5px 0;
+  color: #212529;
+  line-height: 1.5em;
+}
+
+.page li a:hover,
+.page p a:hover {
+  color: #33a9ff;
+  border-bottom: none;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.footer span {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.footer a {
+  color: #868e96;
+  transition: color 200ms;
+  position: relative;
+  user-select: none;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.footer a:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -5px;
+  left: 0;
+  background-color: #212529;
+  visibility: hidden;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: all 250ms cubic-bezier(0.82, 0, 0.12, 1);
+}
+
+.footer a:hover {
+  color: #212529;
+}
+
+.footer a:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
