@@ -38,6 +38,11 @@ $ now-docs --help
   — Check now domains availability
 * [now-domains-price](https://github.com/bukinoshita/now-domains-price)
   — Check now domains price
+* [netlify-docs](https://github.com/bukinoshita/netlify-docs) — Deploy docs with a single command using Netlify
+
+## Comparing `now-docs` with `netlify-docs`
+
+Check comparison [here](https://latency.apex.sh/?url=https%3A%2F%2Fnow-docs.now.sh%2F&compare=http%3A%2F%2Fnetlify-docs.netlify.com%2F).
 
 
 ## License
